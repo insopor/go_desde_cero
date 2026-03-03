@@ -5,7 +5,8 @@ import (
 	"runtime"
 
 	"github.com/insopor/go_desde_cero/ejercicios"
-	"github.com/insopor/go_desde_cero/teclado"
+	//"github.com/insopor/go_desde_cero/teclado"
+	"github.com/insopor/go_desde_cero/iteraciones"
 	"github.com/insopor/go_desde_cero/variables"
 )
 
@@ -52,6 +53,12 @@ func main() {
 
 	fmt.Println(ejercicios.Ejercicio01("20"))
 
-	teclado.IngresoNumeros()
+	//teclado.IngresoNumeros()
+
+	iteraciones.Iterar()
+	iteraciones.IterarDos()
+	iteraciones.IterarTres()
+	iteraciones.IterarBreak()
+	iteraciones.IterarContinue()
 
 }
