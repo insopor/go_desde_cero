@@ -17,7 +17,8 @@ func Ejercicio02() {
 	if scanner.Scan() {
 		numero, err = strconv.Atoi(scanner.Text())
 		if err != nil {
-			panic("el dato ingresado no es correcto " + err.Error())
+			fmt.Println("vuelva a intentarlo")
+			Ejercicio02()
 		} else {
 			for i := 1; i < 11; i++ {
 				fmt.Println(i, "X", numero, i*numero)
