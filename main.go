@@ -61,5 +61,6 @@ func main() {
 	//iteraciones.IterarBreak()
 	//iteraciones.IterarContinue()
 
-	ejercicios.Ejercicio02()
+	//ejercicios.Ejercicio02()
+	ejercicios.Ejercicio02ptilotta()
 }
