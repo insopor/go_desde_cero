@@ -56,9 +56,10 @@ func main() {
 	//teclado.IngresoNumeros()
 
 	iteraciones.Iterar()
-	iteraciones.IterarDos()
-	iteraciones.IterarTres()
-	iteraciones.IterarBreak()
-	iteraciones.IterarContinue()
+	//iteraciones.IterarDos()
+	//iteraciones.IterarTres()
+	//iteraciones.IterarBreak()
+	//iteraciones.IterarContinue()
 
+	ejercicios.Ejercicio02()
 }
