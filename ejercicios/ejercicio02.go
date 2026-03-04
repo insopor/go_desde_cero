@@ -8,8 +8,8 @@ import (
 )
 
 var numero int
-var leyenda string
 var err error
+var texto string
 
 // tablas de multiplicar
 func Ejercicio02() {
@@ -29,7 +29,7 @@ func Ejercicio02() {
 	}
 }
 
-func Ejercicio02ptilotta() {
+func Ejercicio02ptilotta() string {
 
 	fmt.Println("ingrese el numero: ")
 	scanner := bufio.NewScanner(os.Stdin)
@@ -46,6 +46,13 @@ func Ejercicio02ptilotta() {
 		}
 	}
 	for i := 1; i < 11; i++ {
-		fmt.Println(i, " X ", numero, " = ", i*numero)
+		//impresion normal con printf pára crear la cadena
+		//fmt.Printf("%d X %d = %d \n", i, numero, i*numero)
+
+		//guardar en una variable que genera una cadena para guardar en cadena para guarldarlo en un archivo
+		texto += fmt.Sprintf("%d X %d = %d \n", numero, i, i*numero)
+
 	}
+	//fmt.Println(texto)
+	return texto
 }

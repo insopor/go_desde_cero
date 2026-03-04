@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/insopor/go_desde_cero/archivos"
 	"github.com/insopor/go_desde_cero/ejercicios"
+
 	//"github.com/insopor/go_desde_cero/teclado"
 	"github.com/insopor/go_desde_cero/iteraciones"
 	"github.com/insopor/go_desde_cero/variables"
@@ -62,5 +64,12 @@ func main() {
 	//iteraciones.IterarContinue()
 
 	//ejercicios.Ejercicio02()
-	ejercicios.Ejercicio02ptilotta()
+	//fmt.Println(ejercicios.Ejercicio02ptilotta())
+
+	//este metodo suma tabla es el que crea la escritura sobre el archivo
+	//archivos.Sumatabla()
+
+	//este método de leoarchivo es para leer el archivo que previamente se hizo con sumatabla
+	archivos.LeoArchivo()
+
 }
