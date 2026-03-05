@@ -8,6 +8,7 @@ import (
 	"github.com/insopor/go_desde_cero/ejercicios"
 
 	//"github.com/insopor/go_desde_cero/teclado"
+	"github.com/insopor/go_desde_cero/arreglosslice"
 	"github.com/insopor/go_desde_cero/funciones"
 	"github.com/insopor/go_desde_cero/iteraciones"
 	"github.com/insopor/go_desde_cero/variables"
@@ -73,9 +74,14 @@ func main() {
 	//este método de leoarchivo es para leer el archivo que previamente se hizo con sumatabla
 	//archivos.LeoArchivo()
 
-	funciones.Calculos()
-	funciones.LlamarClousure()
+	//funciones.Calculos()
+	//funciones.LlamarClousure()
 	//funciones.Recursion1()
 	funciones.Exponencia(5)
+	arreglosslice.MuestraTabla()
+	//arreglosslice.MuestraMatriz()
+	arreglosslice.MuestraSlice()
+	arreglosslice.SliceAPartirDeUnArreglo()
+	arreglosslice.Capacidad()
 
 }
