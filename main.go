@@ -11,6 +11,7 @@ import (
 	"github.com/insopor/go_desde_cero/arreglosslice"
 	"github.com/insopor/go_desde_cero/funciones"
 	"github.com/insopor/go_desde_cero/iteraciones"
+	"github.com/insopor/go_desde_cero/mapas"
 	"github.com/insopor/go_desde_cero/variables"
 )
 
@@ -83,5 +84,5 @@ func main() {
 	arreglosslice.MuestraSlice()
 	arreglosslice.SliceAPartirDeUnArreglo()
 	arreglosslice.Capacidad()
-
+	mapas.MostrarMapas()
 }
