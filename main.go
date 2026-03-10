@@ -2,16 +2,18 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+	//"runtime"
 
 	//"github.com/insopor/go_desde_cero/archivos"
-	"github.com/insopor/go_desde_cero/ejercicios"
+	//"github.com/insopor/go_desde_cero/ejercicios"
 
 	//"github.com/insopor/go_desde_cero/teclado"
-	"github.com/insopor/go_desde_cero/arreglosslice"
-	"github.com/insopor/go_desde_cero/funciones"
-	"github.com/insopor/go_desde_cero/iteraciones"
-	"github.com/insopor/go_desde_cero/mapas"
+	//"github.com/insopor/go_desde_cero/arreglosslice"
+	//"github.com/insopor/go_desde_cero/funciones"
+	//"github.com/insopor/go_desde_cero/iteraciones"
+	//"github.com/insopor/go_desde_cero/mapas"
+
+	"github.com/insopor/go_desde_cero/usuarios"
 	"github.com/insopor/go_desde_cero/variables"
 )
 
@@ -27,13 +29,15 @@ func main() {
 
 	//forma tradicional:
 	// se declara la variable y despues se evalua el resultado
-	sisOp := runtime.GOOS
-	fmt.Println(sisOp)
-	if sisOp == "darwin" || sisOp == "OS X" {
-		fmt.Println("es mac")
-	} else {
-		fmt.Println("no es mac")
-	}
+	/*
+		sisOp := runtime.GOOS
+		fmt.Println(sisOp)
+		if sisOp == "darwin" || sisOp == "OS X" {
+			fmt.Println("es mac")
+		} else {
+			fmt.Println("no es mac")
+		}
+	*/
 
 	//forma de GO: se declara la variable dentro del if y despues se evalua dentro de la misma linea
 	/*
@@ -45,22 +49,23 @@ func main() {
 	*/
 
 	// este es el rtipo switch que es para varios casos
-	switch sisOp := runtime.GOOS; sisOp {
-	case "windows":
-		fmt.Println("es windows")
-	case "darwi":
-		fmt.Println("es darwin")
-	case "OSX":
-		fmt.Println("es mac os")
-	default:
-		fmt.Printf("%s \n ", sisOp)
-	}
-
-	fmt.Println(ejercicios.Ejercicio01("20"))
+	/*
+		switch sisOp := runtime.GOOS; sisOp {
+		case "windows":
+			fmt.Println("es windows")
+		case "darwi":
+			fmt.Println("es darwin")
+		case "OSX":
+			fmt.Println("es mac os")
+		default:
+			fmt.Printf("%s \n ", sisOp)
+		}
+	*/
+	//fmt.Println(ejercicios.Ejercicio01("20"))
 
 	//teclado.IngresoNumeros()
 
-	iteraciones.Iterar()
+	//iteraciones.Iterar()
 	//iteraciones.IterarDos()
 	//iteraciones.IterarTres()
 	//iteraciones.IterarBreak()
@@ -78,11 +83,15 @@ func main() {
 	//funciones.Calculos()
 	//funciones.LlamarClousure()
 	//funciones.Recursion1()
-	funciones.Exponencia(5)
-	arreglosslice.MuestraTabla()
+	//funciones.Exponencia(5)
+	//arreglosslice.MuestraTabla()
 	//arreglosslice.MuestraMatriz()
-	arreglosslice.MuestraSlice()
-	arreglosslice.SliceAPartirDeUnArreglo()
-	arreglosslice.Capacidad()
-	mapas.MostrarMapas()
+	//arreglosslice.MuestraSlice()
+	//arreglosslice.SliceAPartirDeUnArreglo()
+	//arreglosslice.Capacidad()
+	//mapas.MostrarMapas()
+
+	usuarios.AltaUsuario()
+
+	//ejerciciosinterface.HumanosRespirando()
 }
