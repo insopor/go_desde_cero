@@ -4,4 +4,5 @@ type Animal interface {
 	respirar()
 	comer()
 	EsCarnivoro() bool
+	Estavivo() bool
 }
