@@ -13,6 +13,8 @@ import (
 	//"github.com/insopor/go_desde_cero/iteraciones"
 	//"github.com/insopor/go_desde_cero/mapas"
 
+	ei "github.com/insopor/go_desde_cero/ejerciciosInterface"
+	"github.com/insopor/go_desde_cero/modelos"
 	"github.com/insopor/go_desde_cero/usuarios"
 	"github.com/insopor/go_desde_cero/variables"
 )
@@ -93,5 +95,10 @@ func main() {
 
 	usuarios.AltaUsuario()
 
+	Pedro := new(modelos.Hombre)
+	ei.HumanosRespirando(Pedro)
+
 	//ejerciciosinterface.HumanosRespirando()
+	Maria := new(modelos.Mujer)
+	ei.HumanosRespirando(Maria)
 }

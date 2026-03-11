@@ -4,5 +4,5 @@ type Humano interface {
 	Respirar()
 	Pensar()
 	Comer()
-	Sexo()
+	Sexo() string
 }

@@ -1,7 +1,7 @@
 package modelos
 
 type Mujer struct {
-	Hombre
+	Hombre //asi se heredan las propiedades
 }
 
 func (m *Mujer) Respirar()    { m.respirando = true }
