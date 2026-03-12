@@ -15,6 +15,7 @@ import (
 
 	"github.com/insopor/go_desde_cero/deferPanic"
 	ei "github.com/insopor/go_desde_cero/ejerciciosInterface"
+	gorutines "github.com/insopor/go_desde_cero/goRutines"
 	"github.com/insopor/go_desde_cero/modelos"
 	"github.com/insopor/go_desde_cero/usuarios"
 	"github.com/insopor/go_desde_cero/variables"
@@ -105,5 +106,31 @@ func main() {
 
 	deferPanic.VemosDifer()
 	//deferPanic.EjemploPanic()
-	deferPanic.EjemploRecover()
+	//deferPanic.EjemploRecover()
+
+	//inicia la go rutine
+	//go gorutines.MiNombreLento("arturo")
+
+	//la ejecución del programa no termina
+	/*
+		fmt.Println("estoy aqui")
+		var x string
+		fmt.Scanln(&x)
+	*/
+
+	//de esta manera podemos hacer que la ejecución termine hasta que termine de ejecutarse la rutina
+	canal1 := make(chan bool) //creamos el canal para inyectar
+	go gorutines.MiNombreLentoChanel("arturo", canal1)
+	fmt.Println("estoy aqui")
+	<-canal1 // asi se declara el await o la espera a que se termine la rutina
+
+	//también de esta manera podemos declarar el await dentro de una funcion anonima
+	// y dentro de la funcion también podemos declarar código extra
+	canal2 := make(chan bool)
+	go gorutines.MiNombreLentoChanel("beto", canal2)
+	defer func() {
+		<-canal2
+	}()
+	fmt.Println("estoy aqui 2")
+
 }
