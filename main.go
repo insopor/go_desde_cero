@@ -20,7 +20,9 @@ import (
 	"github.com/insopor/go_desde_cero/modelos"
 	"github.com/insopor/go_desde_cero/usuarios"
 	"github.com/insopor/go_desde_cero/variables"
-	"github.com/insopor/go_desde_cero/webserver"
+
+	//"github.com/insopor/go_desde_cero/webserver"
+	"github.com/insopor/go_desde_cero/middelware"
 )
 
 var r1 bool
@@ -137,6 +139,8 @@ func main() {
 		fmt.Println("estoy aqui 2")
 	*/
 
-	webserver.MiWebSerbver()
+	//webserver.MiWebSerbver()
+
+	middelware.MiMiddleware()
 
 }
