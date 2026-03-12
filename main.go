@@ -13,6 +13,7 @@ import (
 	//"github.com/insopor/go_desde_cero/iteraciones"
 	//"github.com/insopor/go_desde_cero/mapas"
 
+	"github.com/insopor/go_desde_cero/deferPanic"
 	ei "github.com/insopor/go_desde_cero/ejerciciosInterface"
 	"github.com/insopor/go_desde_cero/modelos"
 	"github.com/insopor/go_desde_cero/usuarios"
@@ -101,4 +102,8 @@ func main() {
 	//ejerciciosinterface.HumanosRespirando()
 	Maria := new(modelos.Mujer)
 	ei.HumanosRespirando(Maria)
+
+	deferPanic.VemosDifer()
+	//deferPanic.EjemploPanic()
+	deferPanic.EjemploRecover()
 }
